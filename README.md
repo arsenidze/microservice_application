@@ -1,7 +1,6 @@
 # microservice_application
-The example microservice application that written with Flask and deployed with Docker-Compose
 
-That project shows the example of a simple application written with a microservice architecture principle. 
+That project shows the example of a simple application written in a microservice architecture principle. 
 Also, the repo contains a respective version of app that written in a monolithic style. 
 
 ### Details
@@ -15,10 +14,14 @@ The are 4 services:
 ![services_structure](.images/services_structure.png)
 
 ### Run
-In the simple_microservice_app folder:
+Docker-compose is used to deploy all services.
+
+Do:
 ```bash
 docker-compose up
 ```
+in the simple_microservice_app folder.
+
 
 ### Resulting app
 
