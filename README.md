@@ -12,4 +12,8 @@ The are 4 services:
 * text-to_upper-service
 * text-to_lower-service
 
-![services_structure](.images/services_sturcutre.png)
+![services_structure](.images/services_structure.png)
+
+### Resulting app
+
+![resulting_app](.images/resulting_app.PNG)
