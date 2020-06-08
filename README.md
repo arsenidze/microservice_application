@@ -14,6 +14,12 @@ The are 4 services:
 
 ![services_structure](.images/services_structure.png)
 
+### Run
+In the simple_microservice_app folder:
+```bash
+docker-compose up
+```
+
 ### Resulting app
 
 ![resulting_app](.images/resulting_app.PNG)
