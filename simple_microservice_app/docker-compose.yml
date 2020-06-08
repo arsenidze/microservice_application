@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  # ui-service
+  ui-service:
+    build:
+      context: ./ui-service
+      dockerfile: Dockerfile.Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - REVERT_SERVICE_PORT=5001
+      - TO_UPPER_SERVICE_PORT=5002
+    depends_on:
+      - text-revert-service
+      - text-to_upper-service
+
+  # text-revert-service
+  text-revert-service:
+    build:
+      context: ./text-revert-service
+      dockerfile: Dockerfile.Dockerfile
+    ports:
+      - "5001:5001"
+    environment:
+      PORT: 5001
+
+  # text-to_upper-service
+  text-to_upper-service:
+    build:
+      context: ./text-to_upper-service
+      dockerfile: Dockerfile.Dockerfile
+    ports:
+      - "5002:5002"
+    environment:
+      PORT: 5002
